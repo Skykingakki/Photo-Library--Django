@@ -1,0 +1,142 @@
+{% extends 'base.html' %}
+
+{%block title%}
+Aakash Index page
+{% endblock title %}
+
+{% block body %}
+
+<div class = 'container-fluid my-4'>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+    <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/img/1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img/5.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/img/9.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </a>
+</div>
+</div>
+
+
+<div class="container-fluid my-2">
+<h1 class = "my-4 text-center">Select from our range of Photos</h1>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/400x300?architecture" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Download Random Architeture photos</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://source.unsplash.com/400x300/?architecture" download>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+                </a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/400x300?water,sea" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Download Random Water Bodies photos</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href = "https://source.unsplash.com/400x300?water,sea" download>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+                </a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/400x300?fire,dragon" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Download Random Fire related photos</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href = "https://source.unsplash.com/400x300?fire" download>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+                </a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/400x300?technology,computer" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Download Random Computer photos</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href ="https://source.unsplash.com/400x300?technology" download>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+                </a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/400x300?food,dish" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Download Random Food related photos</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="https://source.unsplash.com/400x300?food" download>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+                </a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/400x300?art,painting" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Download Random Art related photos</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href = "https://source.unsplash.com/400x300?art" download>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Download</button>
+                </a>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+{% endblock body %}

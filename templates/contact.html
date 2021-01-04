@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{%block title%}
+Contact page
+{% endblock title %}
+
+{% block body %}
+
+<div class="container my-4">
+<h1 class="text-center">Contact Us</h1>
+
+<form method ="POST" action="/contact">
+{% csrf_token %}
+<div class="mb-3">
+  <label for="Name" class="form-label">Name</label>
+  <input type="text" class="form-control" id="name" name = "name" placeholder="Enter your name bastard">
+</div>
+<div class="mb-3">
+  <label for="email" class="form-label">Email address</label>
+  <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="Phone" class="form-label">Phone</label>
+  <input type="phone" class="form-control" id="phone" name="phone" placeholder="Enter your phone number">
+</div>
+<div class="mb-3">
+  <label for="desc" class="form-label">Write your message here</label>
+  <textarea class="form-control" id="desc" name="desc" rows="3"></textarea>
+</div>
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>
+<div class="text-center">
+<a href = "https://www.facebook.com/ak9711" class="fab fa-facebook" style="font-size:36px;"></a>
+<a href = "https://www.linkedin.com/in/ak9711" class="fab fa-linkedin" style="font-size:36px;"></a>
+</div>
+</div>
+
+{% endblock body %}
